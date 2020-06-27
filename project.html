@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GAME STORE </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars"id="menu-btn"onclick="openmenu()"></i>
+            <i class="fa fa-times"id="close-btn"onclick="closemenu()"></i>
+            <img src= "images/logo.png" class="logo" width="75px" height="200px">
+            <input type ="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="cart.html"><i class="fas fa-cart-plus"></i>Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!---------Background image and shop now---------->
+<header class="hero">
+    <div class="banner">
+      <h1 class="banner-title">Game Store collection</h1>
+      <button class="banner-btn">shop now</button>
+    </div>
+  </header>
+
+</section>
+
+<!-- cart -->
+<div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart"><i class="fas fa-times"></i></span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+         <div class="cart-item">
+          <img src="images/img1.jpg" alt="product" />
+          <div>
+            <h4>queen bed</h4>
+            <h5>$9.00</h5>
+            <span class="remove-item">remove</span>
+          </div>
+          <div>
+            <i class="fas fa-chevron-up"></i>
+            <p class="item-amount">
+              1
+            </p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div> 
+        <!-- cart item -->
+      </div>
+      <div class="cart-footer">
+        <h3>your total : $<span class="cart-total">0</span></h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of cart -->
+
+<!---------Featured Categories---------->
+<section class="featured-categories">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#PC GAMES">
+                    <h3>PC Games</h3>
+                <img src="images/categories3.png"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="#Mobile Games">
+                    <h3>Mobile Games</h3>
+                <img src="images/categories2.jpg"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="#PS4 Games">
+                    <h3>PS4 Games</h3>
+                <img src="images/categories1.jpg"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------PC GAMES------------->
+<section class="PC GAMES"id ="PC GAMES">
+    <div class="container">
+        <div class="title-box">
+            <h2>PC GAMES</h2>
+        </div>
+            <div class="row">
+              <!----  <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product1.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Fifa 20</h3>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product2.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>God Of War</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product3.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Angry Birds</h3>
+                        <h5>$20.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product4.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Need For Speed</h3>
+                        <h5>$35.00</h5>
+                    </div>
+                </div>
+            -->
+            </div>
+        
+    </div>
+    
+</section>
+<!-------------MOBILE GAMES------------>
+<section class="Mobile Games" id ="Mobile Games">
+    <div class="container">
+        <div class="title-box">
+            <h2>MOBILE GAMES </h2>
+        </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product1.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Fifa 20</h3>
+                        <h5>$50.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product2.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>God Of War</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product3.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Angry Birds</h3>
+                        <h5>$20.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                    <img src="images/product4.jpg">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="Quick pay">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="Add to Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Need For Speed</h3>
+                        <h5>$35.00</h5>
+                    </div>
+                </div>
+                
+            </div>
+        
+    </div>
+
+</section>
+
+<!--------------------PS4 games--------------->
+<section class="PS4 Games"id="PS4 Games">
+    <div class="container">
+        <div class="title-box">
+            <h2>PS4 GAMES </h2>
+        </div>
+            <div class="ps4-products">
+                
+                </div>
+                
+            </div>
+        
+    </div>
+</section>
+
+<!----New Features---->
+<section class="web-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 feature-box">
+                <img src="images/feature1.jpg">
+                <div class="f-text">
+                    <p><b>100% original products</b></p>
+                </div>
+
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="images/feature2.jpg">
+                <div class="f-text">
+                    <p><b>Return policy guaranteed within 15 days</b></p>
+                </div>
+
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="images/feature3.jpg">
+                <div class="f-text">
+                    <p><b>Free Delivery</b></p>
+                </div>
+
+            </div>
+            <div class="col-md-3 feature-box">
+                <img src="images/feature4.jpg">
+                <div class="f-text">
+                    <p><b>Pay online through multiple options</b></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container text-box">
+        <div class="row">
+            <div class="col-md-3">
+               <p><a href="#">Privacy Policy</a></p> 
+                <p><a href="#">Terms of Use</a></p>
+                <p><a href="#">Return Policy</a></p>
+            </div>
+            <div class="col-md-3">
+                <p><a href="#">Contact us</a></p> 
+                 <p><a href="#">About Us</a></p>
+                 <p><a href="#">Career</a></p>
+             </div>
+             <div class="col-md-3">
+                 <h2>Follow us on</h2>
+                <p><i class="fa fa-facebook-official"></i><a href="#">Facebook</a></p> 
+                 <p><i class="fa fa-linkedin"></i><a href="#">LinkedIn</a></p>
+                 <p><i class="fa fa-youtube-play"></i><a href="#">Youtube</a></p>
+             </div>
+             <div class="col-md-3">
+                 <h2>Download App</h2>
+                 <img src="images/appdownload.jpg">
+             </div>
+        </div>
+        <hr>
+        <p class="copyrights">Made by <i class="fa fa-heart-o"></i> UTD</p>
+    </div>
+</section>
+
+
+
+
+<script src="game.js">
+   
+    function openmenu()
+    {
+        document.getElementById("side-menu").style.display="block";
+        document.getElementById("side-menu").style.display="none";
+        document.getElementById("side-menu").style.display="block";
+    }
+    function closemenu()
+    {
+        document.getElementById("side-menu").style.display="none";
+        document.getElementById("side-menu").style.display="block";
+        document.getElementById("side-menu").style.display="none";
+    }
+    </script>
+</body>
